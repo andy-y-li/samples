@@ -2,9 +2,14 @@ html {
     background-color: #B5DEF2;
 }
 
-.wrapper {
-    margin: 140px 0 140px auto;
-    width: 884px;
+ .wrapper {
+   width:1000px;
+   height:500px;
+   position:absolute;
+   top:50%;
+   left:50%;
+   margin-top: -250px;
+   margin-left: -500px;
 }
 
 .loginBox {
