@@ -4,12 +4,18 @@ import (
 	"encoding/json"
 	"strconv"
 
-	"github.com/andy-y-li/samples/todo/models"
 	"github.com/astaxie/beego"
+	"github.com/beego/samples/todo/models"
 )
 
 type TaskController struct {
-	beego.Controller
+	BaseController
+}
+
+func (this *TaskController) Home() {
+	// name := this.GetSession("name").(string)
+	this.CheckLogin()
+	this.MyRender("index.html")
 }
 
 // Example:
