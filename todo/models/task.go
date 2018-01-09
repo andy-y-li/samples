@@ -17,6 +17,7 @@ func NewTask(title string) (*Task, error) {
 	if title == "" {
 		return nil, fmt.Errorf("empty title")
 	}
+	Logd.Debug(title)
 	return &Task{0, title, false}, nil
 }
 
